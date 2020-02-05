@@ -1,4 +1,4 @@
-# django-custome-JWT-token
+# django-custom-JWT-token
 ## custom data and token with the login request  
 #### install latest django version  
 #### install django rest framework
