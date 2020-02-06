@@ -10,6 +10,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
 	def validate(self, attrs):
+		print('in')
 		user = authenticate(username=attrs['username'], password=attrs['password'])
 		if user is not None:
 			if user.is_active:
